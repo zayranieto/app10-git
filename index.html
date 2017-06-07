@@ -1,0 +1,607 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Décima Aplicación</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app10.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  
+</head>
+<body onLoad="MM_preloadImages('imagenes/arbol.jpg','imagenes/cierre.jpg','imagenes/biodiversidad.jpg','imagenes/flores.jpg','imagenes/peces.jpg','imagenes/bonito.jpg','imagenes/arb.jpg','imagenes/conci.png','imagenes/recy.jpg')">
+<div data-role="page" id="Principal" data-theme="a"> 
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> DÍA DE LA TIERRA</h1>
+        </div>
+        
+ <div>
+ <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+             <h2>Historia del día de la tierra.</h2>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Reflexiones sobre el cuidado de la tierra.</h2>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Día internacional de la biodiversidad biológica.</h2>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Conciencia Ecológica.</h2>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Cuidados del medio ambiente.</h2>
+             </a>
+           </li>
+            <li class="ui-first-child ui-last-child">
+             <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Acciones para cuidar el planeta.</h2>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Visor del día de la tierra.</h2>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Datos del autor.</h2>
+             </a>
+           </li>
+</ul>
+</div>
+ 
+ 
+ <div data-role="main" class="ui-content" align="center">
+   <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+   <li class="ui-first-child ui-last-child">
+    <a href="https://hipertextual.com/2015/04/dia-de-la-tierra-2015" data-role="button" >
+     <h2>Historia.</h2>
+      </a>
+       </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="https://www.youtube.com/watch?v=r64LDutliMk" data-role="button" >
+     <h2>Día de la tierra.</h2>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="https://www.youtube.com/watch?v=bR2X6sqsAiY" data-role="button">
+     <h2>Contaminación.</h2>
+    </a>
+    </li>
+   </ul>
+   </div>
+  </div>
+  
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/agua.jpg" alt="agua" title="agua" id="wows1_0"/></li>
+		<li><img src="data1/images/arb.jpg" alt="arb" title="arb" id="wows1_1"/></li>
+		<li><img src="data1/images/arbol.jpg" alt="arbol" title="arbol" id="wows1_2"/></li>
+		<li><img src="data1/images/arco.jpg" alt="arco" title="arco" id="wows1_3"/></li>
+		<li><img src="data1/images/bici.jpg" alt="bici" title="bici" id="wows1_4"/></li>
+		<li><img src="data1/images/bio.jpg" alt="bio" title="bio" id="wows1_5"/></li>
+		<li><img src="data1/images/biodiversidad.jpg" alt="biodiversidad" title="biodiversidad" id="wows1_6"/></li>
+		<li><img src="data1/images/bonito.jpg" alt="bonito" title="bonito" id="wows1_7"/></li>
+		<li><img src="data1/images/cierre.jpg" alt="cierre" title="cierre" id="wows1_8"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/conci.png" alt="wowslideshow" title="conci" id="wows1_9"/></a></li>
+		<li><img src="data1/images/descierto.jpg" alt="descierto" title="descierto" id="wows1_10"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="agua"><span><img src="data1/tooltips/agua.jpg" alt="agua"/>1</span></a>
+		<a href="#" title="arb"><span><img src="data1/tooltips/arb.jpg" alt="arb"/>2</span></a>
+		<a href="#" title="arbol"><span><img src="data1/tooltips/arbol.jpg" alt="arbol"/>3</span></a>
+		<a href="#" title="arco"><span><img src="data1/tooltips/arco.jpg" alt="arco"/>4</span></a>
+		<a href="#" title="bici"><span><img src="data1/tooltips/bici.jpg" alt="bici"/>5</span></a>
+		<a href="#" title="bio"><span><img src="data1/tooltips/bio.jpg" alt="bio"/>6</span></a>
+		<a href="#" title="biodiversidad"><span><img src="data1/tooltips/biodiversidad.jpg" alt="biodiversidad"/>7</span></a>
+		<a href="#" title="bonito"><span><img src="data1/tooltips/bonito.jpg" alt="bonito"/>8</span></a>
+		<a href="#" title="cierre"><span><img src="data1/tooltips/cierre.jpg" alt="cierre"/>9</span></a>
+		<a href="#" title="conci"><span><img src="data1/tooltips/conci.png" alt="conci"/>10</span></a>
+		<a href="#" title="descierto"><span><img src="data1/tooltips/descierto.jpg" alt="descierto"/>11</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <h4>¡CUIDEMOS EL PLANETA!</h4>
+       <img src="res/android/mdpi.png" width="64" height="64">
+        <h4>Zayra Nieto Anaya</h4>
+      </div>
+   </div>
+   
+           <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>Historia.</h1>
+         </div>
+         <div data-role="content" align="center">
+           <div>
+           <img src="imagenes/maceta.jpg" width="272" height="185">
+<p><strong>La historia del Día  Mundial de la Tierra.</strong> </p>
+
+<p>El origen de este día, celebrado mundialmente (aunque no en todas partes), se encuentra en Estados Unidos, durante los 70. Y está asociado, sin duda, a un nombre: Gaylord Nelson. La historia cuenta (a pesar de los curiosos rumores sobre Lenin) que fue este político quién aprovechó un miércoles para organizar una manifestación en defensa del medio ambiente y el ecologismo. Un momento muy estudiado y que venía cociéndose desde la década de los 60 debido a la creciente irresponsabilidad ambiental del gobierno de Estados Unidos. Ya habían gérmenes plantados desde la comunidad científica y estudiantil. Ese miércoles los estudiantes y trabajadores se unieron en una manifestación pacífica que pretendía rendir homenaje y mostrar la preocupación colectiva sobre temas como el medio ambiente, la superpoblación o la conservación de la biodiversidad...
+Y fue todo un éxito. Debido a la participación de dos mil universidades, diez mil escuelas y centenares de comunidades, el gobierno Estadounidense decidió crear Agencia de Protección Ambiental. Este solo fue el comienzo. Durante el 72, la cumbre de la Tierra, en Estocolmo, puso de manifiesto la manifiesta necesidad de una ley medioambiental internacional más comprometida. En los noventa, la celebración del Día de la Tierra ya estaba mucho más generalizada fuera de Estados Unidos y a día de hoy se celebra a nivel mundial. Es más, la plataforma Día de la Tierra trata de promover la concienciación medio ambiental mientras que numerosos colectivos y entidades participan a su manera. Por ejemplo, Google promueve el día con un doodle y una actividad especial mientras que en empresas como Apple, bastante comprometidas con el medio ambiente, aprovechan este día para mostrar su informe de compromiso medioambiental. Gracias a iniciativas como esta, el mundo ha ido tomando una concienciación medioambiental que antes de los 70 era completamente inexistente o muy vaga. Gracias a esto hemos puesto remedio y frenado algunos de los problemas más acuciantes.</p>
+           </div>
+         <div>
+           
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/cierre.jpg',1)"><img src="imagenes/arco.jpg" width="325" height="155" id="Image18"></a> </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+      <h4>¡CUIDEMOS EL PLANETA!</h4>
+       <img src="res/android/mdpi.png" width="64" height="64">
+        <h4>Zayra Nieto Anaya</h4>
+        </div>
+        </div> 
+        </div>
+        
+        
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>Reflexiones sobre <br> el cuidado de <br>  la tierra.</h1>
+         </div>
+         <div data-role="content" align="center">
+<div>
+           
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/cierre.jpg',1)"><img src="imagenes/arco.jpg" width="325" height="155" id="Image18"></a> </div>
+ <p> “Primero, fue necesario civilizar al hombre en su relación con el hombre.
+Ahora, es necesario civilizar al hombre en su relación con la naturaleza y los animales”
+Víctor Hugo</p>
+
+<p>“Salvaguardar el ambiente…es un principio rector de todo nuestro trabajo
+en el apoyo del desarrollo sostenible; es un componente esencial
+en la erradicación de la pobreza y uno de los cimientos de la paz”
+Kofi Annan</p>
+<br> 
+<img src="imagenes/biodiversidad.jpg" width="292" height="173">
+<br>
+<p>“Cada edición dominical del New York Times consume
+una cantidad de papel fabricada con 200 hectáreas de bosque”
+Gabriel García Márquez
+  </p>
+ <p>"La tierra esta viva no la destruyas."</p>
+
+<p>"Primero fue la tierra después el hombre, porque destruimos a nuestra creadora."</p>
+
+<p>"Mientras la naturaleza grita y llora, el género humano esta sordo y sin alma."</p>
+
+<p>"Corta un árbol y conviértelo en fuego y podrá arder; pero ya no producirá flores ni frutos."</p>
+<br>
+<img src="imagenes/descierto.jpg" width="281" height="180">
+<br>
+<p>"La mejor herencia que podemos dejarle a nuestros hijos es un mundo mejor."</p>
+
+<p>"Solo debería existir Amor, Conocimiento y un Planeta en el que podamos Vivir Sanamente."</p>
+
+<p>"El planeta tierra tiene vida, no seamos sus verdugos."</p>
+<br>
+<img src="imagenes/flores.jpg" width="299" height="169">
+<br>
+<p>"Para la tierra poder salvar, curemos sus heridas y dejemos de contaminar."</p>
+
+<p>"Si no eres capaz de respetar a la tierra atente a las consecuencias."</p>
+
+<p>"El planeta es hermoso, pero tiene un gran defecto llamado hombre."</p>
+
+<p>"El mundo es la suma total de nuestras posibilidades vitales."</p>
+
+
+<div data-role="main" class="ui-content" align="center">
+   <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+   <li class="ui-first-child ui-last-child">
+    <a href="https://www.youtube.com/watch?v=Kt6qjGN0Etk" data-role="button" >
+     <h2>Conciencia Ambiental.</h2>
+      </a>
+       </li>
+       </ul>
+       </div>
+    
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>Reflexión.</h1>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/biodiversidad.jpg',1)"><img src="imagenes/arbol.jpg" width="275" height="183" id="Image19"></a> </div>
+
+  <div>
+  <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+       <li class="ui-first-child ui-last-child"><a href="https://www.youtube.com/watch?v=nmk33OaOqQk" data-role="button">
+         <h2>Documental.</h2>
+      </a>
+       </li>
+   </ul>
+ </div>
+  </div>
+           
+<div data-role="footer" data-theme="a" data-position="fixed">
+      <h4>¡CUIDEMOS EL PLANETA!</h4>
+       <img src="res/android/mdpi.png" width="64" height="64">
+        <h4>Zayra Nieto Anaya</h4>
+    </div>
+  </div> 
+</div>
+
+      
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>¿Qué es la <br> biodiversidad <br>  biológica?</h1>
+         </div>
+         <div data-role="content" align="center">
+      </div>
+             <div data-role="main" class="ui-content">
+             <div>
+               <p><img src="imagenes/bio.jpg" width="338" height="149"></p>
+               <p>La diversidad biológica, o biodiversidad, es el término por elque se hace referencia a la amplia variedad de seres vivos sobre la Tierra y los patrones naturales que conforma. La diversidad biológica que observamos hoy es el fruto de miles de millones de años de evolución, moldeada por procesos naturales y, cada vez más, por la influencia del ser humano. Esta diversidad forma la red vital de la cual somos parte integrante y de la cual tanto dependemos.
+
+Con frecuencia, se entiende por diversidad la amplia variedad de plantas, animales y microorganismos existentes. Hasta la fecha, se han identificado unos 1,75 millones de especies, en su mayor parte criaturas pequeñas, por ejemplo, insectos. Los científicos reconocen que en realidad hay cerca de 13 millones de especies, si bien las estimaciones varían entre 3 y 100 millones.
+
+La diversidad biológica incluye también las diferencias gen”ticas dentro de cada especie, por ejemplo, entre las variedades de cultivos y las razas de ganado. Los cromosomas, los genes y el ADN, es decir, los componentes vitales, determinan la singularidad de cada individuo y de cada especie.
+<br>
+<img src="imagenes/medio.jpg" width="189" height="267"> 
+<br>
+Otro aspecto adicional de la diversidad biológica es la variedad de ecosistemas, por ejemplo, los que se dan en los desiertos, los bosques, los humedales, las montañas, los lagos, los ríos y paisajes agrícolas. En cada ecosistema, los seres vivos, entre ellos, los seres humanos, forman una comunidad, interactúan entre sí, asi como con el aire, el agua y el suelo que les rodea.
+
+Es esta combinación de formas de vida y sus interacciones mutuas y con el resto del entorno que ha hecho de la Tierra un lugar habitable y único para los seres humanos. La diversidad biológica ofrece un gran número de bienes y servicios que sustentan nuestra vida.
+</p>
+<div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/recy.jpg',1)"><img src="imagenes/tierra_madre.jpg" width="268" height="188" id="Image23"></a> </div>
+</div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content" align="center">
+   <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+   <li class="ui-first-child ui-last-child">
+    <a href="https://www.youtube.com/watch?v=chATmeGUzK8" data-role="button" >
+     <h2>Biodiversidad Biológica.</h2>
+      </a>
+       </li>
+       </ul>
+       </div>
+
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>¡CUIDEMOS EL PLANETA!</h4>
+       <img src="res/android/mdpi.png" width="64" height="64">
+        <h4>Zayra Nieto Anaya</h4>  
+        </div>
+        </div>
+</div>
+        
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>Conciencia <br> ecológica.</h1>
+         </div>
+         <div data-role="content" align="center">
+           <div>
+           <h1>¿Qué es?</h1>
+           </div>
+           <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/conci.png',1)"><img src="imagenes/bici.jpg" width="295" height="171" id="Image22"></a>
+<p> Qué es la conciencia ecológica. A partir del momento en que el hombre comenzó a apropiarse de la naturaleza para darle forma a sus necesidades y caprichos, los ecosistemas de todo el planeta dieron su respuesta ante este tipo de abusos, a través de consecuencias negativas como la contaminación y la pérdida de biodiversidad.
+  
+  Hoy en día podemos conocer, a través de los medios de comunicación, todas las noticias referentes al cambio climático. Pero ante la inevitable realidad ¿cuántos de nosotros nos sentimos responsables -y actuamos en consecuencia- por los daños que estamos causando al planeta?
+  <br>
+  <img src="imagenes/info.jpg" width="312" height="161">
+   <br>
+  Justamente, tener conciencia ecológica es entender que somos dependientes de la naturaleza y responsables por su estado de conservación. Ignorar esta verdad equivale a autodestruirnos, porque al degradar el medio ambiente estamos empeorando nuestra calidad de vida y poniendo en peligro el futuro de nuestros descendientes.</p>
+
+        </div>
+        </div>
+        <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+            <h1>¿Cómo generarla?</h1>
+          <img src="imagenes/biodiversidad.jpg" width="275" height="183">
+          <div>
+           <img src="imagenes/bonito.jpg" width="275" height="183"> 
+           </div>
+          
+<p> Infundir respeto por el medio ambiente a las generaciones más jóvenes es una obligación moral de los mayores, de la sociedad en general, ya sea en forma de políticas como mediante la enseñanza en los colegios o con el ejemplo en su entorno más próximo. No en vano, ellos son el futuro y de esa transmisión de valores dependerá el futuro del planeta.
+  
+  ¿Pero, cómo hacerlo? Generar conciencia ecológica en los jóvenes va más allá de campañas puntuales que inviten a reciclar o de declaraciones en favor del medio ambiente de boca de sus ídolos. Aunque todo ayuda, en realidad sólo una educación que empiece en la más tierna infancia logrará el objetivo: que sean ciudadanos informados, con espíritu crítico, porque sólo entendiendo y amando a la naturaleza se contribuirá a su preservación.
+  <br>
+  <img src="imagenes/feo.jpg" width="259" height="194"> 
+  <br>
+  Los primeros años son fundamentales. En el seno de la familia o en los colegios es donde se socializa al niño, el periodo en el que se desarrolla se personalidad y se le orienta para un mejor desarrollo. Los valores, los conocimientos y las actitudes que inculquen el respeto por los demás (lo que incluye la Naturaleza) se transmitirán a través de cuentos, actividades escolares y, de forma especial, a través de la convivencia familiar.</p>
+      </div>
+        </div>
+        
+         <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Planeta</h1>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/peces.jpg',1)"><img src="imagenes/agua.jpg" width="259" height="194" id="Image"></a> </div>
+        </div>
+        
+<div data-role="main" class="ui-content" align="center">
+   <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+   <li class="ui-first-child ui-last-child">
+    <a href="https://www.youtube.com/watch?v=chATmeGUzK8" data-role="button" >
+     <h2>Biodiversidad Biológica.</h2>
+      </a>
+       </li>
+       </ul>
+       </div>
+        
+          <div data-role="footer" data-theme="a" data-position="fixed">
+            <h4>¡CUIDEMOS EL PLANETA!</h4>
+       <img src="res/android/mdpi.png" width="64" height="64">
+        <h4>Zayra Nieto Anaya</h4> 
+        </div>
+        </div> 
+        </div>
+        
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Cuidados del medio ambiente<br> </h1>
+         </div>
+<div data-role="content" align="center">
+           <div>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/peces.jpg',1)"><img src="imagenes/agua.jpg" width="259" height="194" id="Image4"></a>
+</div>
+  <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+            <h1>¡COMENCEMOS EN CASA!</h1>
+          <img src="imagenes/cierre.jpg" width="259" height="194">
+          <br>
+          <p>Cuida tu medio ambiente desde tu barrio o colonia.
+          <br>
+Seguro que puedes hacer mucho por tu medio ambiente desde tu casa o la escuela, pero también en tu barrio o colonia. Te proponemos lo siguiente:
+<br>
+<img src="imagenes/recy.jpg" width="225" height="225"> 
+<br>
+Unete con tus vecinos para limpiar los terrenos sin construcción.
+<br>
+Limpien los ríos que halla en la colonia.
+<br>
+Invita a todos en tu colonia, por medio de carteles a que cuiden el agua y vigila constantemente que la gente no la desperdicie.
+<br>
+<img src="imagenes/planta.jpg" width="275" height="183"> 
+<br>
+Da un recorrido por tu colonia de barrio en busca de fugas de agua y reportala a la comisión del agua de tu localidad.
+<br>
+Si observas que hay muy pocos botes de basura en la colonia, solicita junto con algunos de tus vecinos a las autoridades, que coloquen más y realiza una campaña para que la gente deposite la basura en los botes. Aunque en México no se tiene una cultura de separar la basura, tú puedes comenzarla, enseñándoles por medio de carteles a tus vecinos.
+<br>
+Organizate con tus vecinos para cuidar y limpiar los parques y jardines de tu colonia.
+<br>
+<img src="imagenes/tala.jpg" width="195" height="160"> <br>
+También puedes solicitar a las autoridades de tu comunidad, árboles para sembrar.
+ <br>
+Se amable y respetuoso con tus vecinos.
+<br>
+Vigila que no maltraten a los animales que hay en tu colonia.
+<br>
+<img src="imagenes/arbol.jpg" width="275" height="183"> 
+<br>  
+Como puedes darte cuenta, aunque seas un niño puedes hacer muchísimo por el medio ambiente desde los lugares en donde vives y frecuentas. Muchas personas creen que ellos por ser pequeños no entienden acerca de lo importante que es cuidar el medio ambiente y mucho menos poner en práctica algunas medidas para lograrlo, sin embargo son quienes le ponen el ejemplo a los adultos, por ser más concientes, sensibles, y participativos en el cuidado de su entorno.
+<br>
+No dejes que el lugar en donde vives ahora y en un futuro se destruya y contamine, sigue colaborando para tener un mundo mejor y más saludable.
+<br></p>
+</div>
+</div>
+
+
+<div data-role="main" class="ui-content" align="center">
+   <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+   <li class="ui-first-child ui-last-child">
+    <a href="http://www.monografias.com/trabajos89/cuidado-al-medio-ambiente/cuidado-al-medio-ambiente.shtml#ixzz4irhwi9iY" data-role="button" >
+     <h2>Conoce más.</h2>
+      </a>
+       </li>
+       </ul>
+       </div>
+
+
+<div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+            <h1>¡RESOLVER LOS <br> PROBLEMAS AMBIENTALES!</h1>
+            </div>
+            <div>
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/bonito.jpg',1)"><img src="imagenes/descierto.jpg" width="281" height="180" id="Image5"></a></div>
+         <br>
+          Manejo de los bosques. Protección de los suelos y reforestación.
+          <br>
+Contaminación de la atmósfera y cambio climático. Control de la concentración de contaminantes atmosféricos, reduciendo las emisiones.
+<br>
+<img src="imagenes/biodiversidad.jpg" width="292" height="173">
+<br>
+Protección de los océanos y áreas costeras. Control de los niveles de concentración de contaminantes, reducción de la pesca excesiva y promoción del desarrollo sostenible.
+<br>
+Biodiversidad. Los Estados tienen derechos soberanos sobre su flora y fauna y los invita a ser responsables de su conservación y a promover la investigación científica sobre ellos.
+<br>
+<div data-role="collapsible" data-content-theme="false">
+            <h1>¡Resuelvelos!</h1>
+            <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/biodiversidad.jpg',1)"><img src="imagenes/focos.jpg" width="358" height="141" id="Image21"></a> </div>
+</div>
+</div>
+
+<div>
+            <li class="ui-first-child ui-last-child">
+    <a href="https://www.youtube.com/watch?v=5snjMcYO_Y4" data-role="button">
+     <h2>¡Concientinzación!</h2>
+    </a>
+    </li>
+    </div>
+        </div>
+        
+<div data-role="footer" data-theme="a" data-position="fixed">
+            <h4>¡CUIDEMOS EL PLANETA!</h4>
+       <img src="res/android/mdpi.png" width="64" height="64">
+        <h4>Zayra Nieto Anaya</h4> 
+        </div>
+        </div>
+        
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>Desarrollador.</h1>
+         </div>
+         <div data-role="content" align="center">
+           <div>
+            <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li> 
+         <h2>Datos.</h2>
+         <h1> Alumna:</h1>
+         <p> Zayra Nieto Anaya</p>
+         <h1> Grado y Grupo:</h1>
+         <p> 4to "E"</p>
+         <h1> Submódulo: </h1>
+         <p> Desarrrolla Aplicaciones Móviles (DAM)</p>
+         <h1> Docente: </h1>
+         <p> Lic. José Antonio Gómez Hernández</p>
+       </li>
+   </ul>
+         </div>  
+         <div data-role="collapsible" data-content-theme="false">
+           <h1>¡Gracias!</h1>
+            <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/arb.jpg',1)"><img src="imagenes/medio.jpg" width="189" height="267" id="Image20"></a> </div>
+         
+<div data-role="footer" data-theme="a" data-position="fixed">
+      <h4>¡CUIDEMOS EL PLANETA!</h4>
+       <img src="res/android/mdpi.png" width="64" height="64">
+        <h4>Zayra Nieto Anaya</h4>
+        </div>
+        </div> 
+        </div>
+        
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>¡VISOR!</h1>
+         </div>
+         <div data-role="content" align="center">
+<div>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/libro.jpg" alt="libro" title="libro" id="wows1_0"/></li>
+		<li><img src="data1/images/maceta.jpg" alt="maceta" title="maceta" id="wows1_1"/></li>
+		<li><img src="data1/images/mar.jpg" alt="mar" title="mar" id="wows1_2"/></li>
+		<li><img src="data1/images/medio.jpg" alt="medio" title="medio" id="wows1_3"/></li>
+		<li><img src="data1/images/mundo.jpg" alt="mundo" title="mundo" id="wows1_4"/></li>
+		<li><img src="data1/images/peces.jpg" alt="peces" title="peces" id="wows1_5"/></li>
+		<li><img src="data1/images/planta.jpg" alt="planta" title="planta" id="wows1_6"/></li>
+		<li><img src="data1/images/plantar.jpg" alt="plantar" title="plantar" id="wows1_7"/></li>
+		<li><img src="data1/images/pulmones.jpg" alt="pulmones" title="pulmones" id="wows1_8"/></li>
+		<li><img src="data1/images/recy.jpg" alt="recy" title="recy" id="wows1_9"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/tala.jpg" alt="wowslider.com" title="tala" id="wows1_10"/></a></li>
+		<li><img src="data1/images/tierra_madre.jpg" alt="tierra_madre" title="tierra_madre" id="wows1_11"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="libro"><span><img src="data1/tooltips/libro.jpg" alt="libro"/>1</span></a>
+		<a href="#" title="maceta"><span><img src="data1/tooltips/maceta.jpg" alt="maceta"/>2</span></a>
+		<a href="#" title="mar"><span><img src="data1/tooltips/mar.jpg" alt="mar"/>3</span></a>
+		<a href="#" title="medio"><span><img src="data1/tooltips/medio.jpg" alt="medio"/>4</span></a>
+		<a href="#" title="mundo"><span><img src="data1/tooltips/mundo.jpg" alt="mundo"/>5</span></a>
+		<a href="#" title="peces"><span><img src="data1/tooltips/peces.jpg" alt="peces"/>6</span></a>
+		<a href="#" title="planta"><span><img src="data1/tooltips/planta.jpg" alt="planta"/>7</span></a>
+		<a href="#" title="plantar"><span><img src="data1/tooltips/plantar.jpg" alt="plantar"/>8</span></a>
+		<a href="#" title="pulmones"><span><img src="data1/tooltips/pulmones.jpg" alt="pulmones"/>9</span></a>
+		<a href="#" title="recy"><span><img src="data1/tooltips/recy.jpg" alt="recy"/>10</span></a>
+		<a href="#" title="tala"><span><img src="data1/tooltips/tala.jpg" alt="tala"/>11</span></a>
+		<a href="#" title="tierra_madre"><span><img src="data1/tooltips/tierra_madre.jpg" alt="tierra_madre"/>12</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+           </div>
+           
+<div data-role="footer" data-theme="a" data-position="fixed">
+      <h4>¡CUIDEMOS EL PLANETA!</h4>
+       <center> <img src="res/android/mdpi.png" width="64" height="64"> </center>
+        <h4>Zayra Nieto Anaya</h4>
+        </div>
+        </div> 
+        
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>Acciones para <br> cuidar el <br> medio ambiente.</h1>
+         </div>
+         <div data-role="content" align="center">
+         
+         <img src="imagenes/agua.jpg" width="259" height="194"><img src="imagenes/arco.jpg" width="325" height="155"><img src="imagenes/conci.png" width="259" height="194"><img src="imagenes/bio.jpg" width="275" height="183">
+         <img src="imagenes/libro.jpg" width="275" height="183"><img src="imagenes/pulmones.jpg" width="300" height="168"><img src="imagenes/planta.jpg" width="275" height="183"><img src="imagenes/plantar.jpg" width="275" height="183">
+         
+           <div>
+           <p>Aprovechemos al máximo la luz, con los cambios de horario nos ayuda también a conservar más energía.</p>
+         <p>Ahorra más agua, con acciones como lavar el auto con un balde con agua en vez de usar la manguera nos ayudará reducir su consumo.</p>
+         <p>Desconecta tus aparatos eléctricos cuando no los estés utilizando, esto ayudara a que no consuman ni una cantidad mínima de electricidad.</p>
+         <p>Elige baterías que se recarguen con energía solar.</p>
+         <p>Evita lo más que se pueda usar el auto. Viajar en bicicleta o transporte público en vez del auto te volverá una persona más sana y contribuirás a contaminar menos.</p>
+         <br>
+         <img src="imagenes/bonito.jpg" width="275" height="183">
+         <br>
+         <p>Elige bolsas de papel o tela, ya que las regulares de plástico son muy contaminantes ya que toman más tiempo para degradarse.</p>
+         <p>Planta árboles, ya sea en el jardín, en algún parque o busca sociedades civiles que estén reforestando. Todo esto ayuda a mejorar el aire de la ciudad y a nuestros pulmones.</p>
+         <p>Los desechos orgánicos pueden ser buen abono, por lo que se podrían enterrar en el suelo para que ayuden a las plantas en vez de tirarlo a la basura.</p>
+         <p>Usar productos naturales sobre las plantas en vez de pesticidas.</p>
+           </div>
+           </div>
+           
+<div data-role="footer" data-theme="a" data-position="fixed">
+      <h4>¡CUIDEMOS EL PLANETA!</h4>
+       <img src="res/android/mdpi.png" width="64" height="64">
+        <h4>Zayra Nieto Anaya</h4>
+        </div>
+        </div> 
+        
+        
+        
+        
+
+</body>
+</html>
